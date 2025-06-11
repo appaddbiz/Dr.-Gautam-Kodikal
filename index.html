@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dr. Gautam Kodikal | Senior Orthopaedic & Joint Replacement Surgeon</title>
   <!-- favicons Icons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/logo/favicon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/logo/favicon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/logo/favicon.png" />
   <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
   <meta name="description" content="Senior Orthopaedic & Joint Replacement Surgeon " />
 
@@ -76,6 +76,9 @@
       .why-choose-one-img-2-mobile {
         display: none;
       }
+      .appointment-btn{
+        display: none !important;
+      }
     }
 
     @media only screen and (min-width: 768px) {
@@ -88,26 +91,46 @@
       }
     }
   </style>
+      <style>
+      @media (min-width: 769px) {
+        .mobile-banner {
+          display: none;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .desk-banner {
+          display: none;
+        }
+      }
+    </style>
 </head>
 
 <body class="custom-cursor">
   <div class="page-wrapper">
-    <header class="main-header-two">
-      <div class="main-header-two__wrap">
-        <div class="main-header-two__logo">
-          <a href="index.html"><img src="assets/images/resources/logo-1.png" alt=""></a>
-        </div>
-        <div class="main-header-two__content">
-          <div class="main-menu-two__top">
-            <div class="main-menu-two__top-inner">
-              <ul class="list-unstyled main-menu-two__contact-list">
+      <header class="main-header-three">
+        <div class="main-menu-three__top">
+          <div class="container">
+            <div class="main-menu-three__top-inner">
+              <ul class="list-unstyled main-menu-three__contact-list">
                 <li>
                   <div class="icon">
                     <i class="icon-mail"></i>
                   </div>
                   <div class="text">
-                    <p><a href="mailto:support@example.com">support@example.com</a>
+                    <p>
+                      <a href="mailto:support@example.com"
+                        >support@example.com</a
+                      >
                     </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon">
+                    <i class="icon-phone-call"></i>
+                  </div>
+                  <div class="text">
+                    <p><a href="tel:+919739619988"> +91 9739619988</a></p>
                   </div>
                 </li>
                 <li>
@@ -120,44 +143,43 @@
                 </li>
                 <li>
                   <div class="icon">
-                    <i class="icon-phone-call"></i>
+                    <i class="icon-pin-1"></i>
                   </div>
                   <div class="text">
-                    <p><a href="tel:+919739619988">+91 9739619988</a></p>
+                    <p>
+                      <a href="https://maps.app.goo.gl/eTzTzynpKW5M3J3S8"
+                        >4th Block, Koramangala, Bengaluru, Karnataka 560034</a
+                      >
+                    </p>
                   </div>
                 </li>
               </ul>
-              <div class="main-menu-two__top-social-box">
-                <h4 class="main-menu-two__top-social-title">Follow Us</h4>
-                <div class="main-menu-two__top-social">
-                  <a href="#"><span class="icon-facebook-app-symbol"></span></a>
-                  <a href="#"><span class="icon-pinterest"></span></a>
-                  <a href="#"><span class="icon-linkedin-big-logo"></span></a>
-                  <a href="#"><span class="icon-instagram"></span></a>
-                </div>
+              <div class="main-menu-three__top-social-box">
+                <!-- <div class="main-menu-three__top-social"> -->
+                <a href="#" class="thm-btn">Book Appointment</a>
+                <!-- </div> -->
               </div>
             </div>
           </div>
-          <nav class="main-menu main-menu-two">
-            <div class="main-menu-two__wrapper">
-              <div class="main-menu-two__wrapper-inner">
-                <div class="main-menu-two__left">
-                  <div class="main-menu-two__logo">
-                    <a href="index.html"><img src="assets/images/resources/logo-1.png" alt=""></a>
-                  </div>
-                  <div class="main-menu-two__call">
-                    <div class="main-menu-two__call-icon">
-                      <i class="icon-phone-call"></i>
-                    </div>
-                    <div class="main-menu-two__call-content">
-                      <p class="main-menu-two__call-sub-title">Call Us Any Time</p>
-                      <h5 class="main-menu-two__call-number"><a href="tel:12004578960">+12 (00)
-                          457 8960</a></h5>
-                    </div>
+        </div>
+        <nav class="main-menu main-menu-three">
+          <div class="main-menu-three__wrapper">
+            <div class="container">
+              <div class="main-menu-three__wrapper-inner">
+                <div class="main-menu-three__left">
+                  <div class="main-menu-three__logo">
+                    <a href="index.html"
+                      ><img
+                        src="assets/logo/Dr. Gautam Kodikal logo.png"
+                        style="width: 250px"
+                        alt=""
+                    /></a>
                   </div>
                 </div>
-                <div class="main-menu-two__main-menu-box">
-                  <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
+                <div class="main-menu-three__main-menu-box">
+                  <a href="#" class="mobile-nav__toggler"
+                    ><i class="fa fa-bars"></i
+                  ></a>
                   <ul class="main-menu__list">
                     <li>
                       <a href="/">Home </a>
@@ -168,21 +190,57 @@
                     <li class="dropdown">
                       <a href="#">Orthopedic Treatments</a>
                       <ul class="shadow-box">
-                        <li><a href="#knee-replacement.html">Knee Replacement</a></li>
-                        <li><a href="#knee-arthroscopy.html">Knee Arthroscopy</a></li>
-                        <li><a href="#hip-replacement.html">Hip Replacement</a></li>
-                        <li><a href="#hip-arthroscopy.html">Hip Arthroscopy</a></li>
-                        <li><a href="#shoulder-replacement.html">Shoulder Replacement</a></li>
-                        <li><a href="#shoulder-arthroscopy.html">Shoulder Arthroscopy</a></li>
-                        <li><a href="#avascular-necrosis.html">Avascular Necrosis</a></li>
+                        <li>
+                          <a href="#knee-replacement.html">Knee Replacement</a>
+                        </li>
+                        <li>
+                          <a href="#knee-arthroscopy.html">Knee Arthroscopy</a>
+                        </li>
+                        <li>
+                          <a href="#hip-replacement.html">Hip Replacement</a>
+                        </li>
+                        <li>
+                          <a href="#hip-arthroscopy.html">Hip Arthroscopy</a>
+                        </li>
+                        <li>
+                          <a href="#shoulder-replacement.html"
+                            >Shoulder Replacement</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#shoulder-arthroscopy.html"
+                            >Shoulder Arthroscopy</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#avascular-necrosis.html"
+                            >Avascular Necrosis</a
+                          >
+                        </li>
                         <li><a href="#self-therapy.html">Self Therapy</a></li>
-                        <li><a href="#foot-ankle-surgery.html">Foot & Ankle Surgery</a></li>
+                        <li>
+                          <a href="#foot-ankle-surgery.html"
+                            >Foot & Ankle Surgery</a
+                          >
+                        </li>
                         <li><a href="#elbow-surgery.html">Elbow Surgery</a></li>
                         <li><a href="#spine-surgery.html">Spine Surgery</a></li>
-                        <li><a href="#sports-injury-treatment.html">Sports Injury Treatments</a></li>
+                        <li>
+                          <a href="#sports-injury-treatment.html"
+                            >Sports Injury Treatments</a
+                          >
+                        </li>
                         <li><a href="#arthritis.html">Arthritis</a></li>
-                        <li><a href="#orthopedic-trauma.html">Orthopedic Trauma Management</a></li>
-                        <li><a href="#back-pain-treatment.html">Back Pain Treatment</a></li>
+                        <li>
+                          <a href="#orthopedic-trauma.html"
+                            >Orthopedic Trauma Management</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#back-pain-treatment.html"
+                            >Back Pain Treatment</a
+                          >
+                        </li>
                         <li><a href="#osteoporosis.html">Osteoporosis</a></li>
                       </ul>
                     </li>
@@ -203,12 +261,12 @@
                     </li>
                   </ul>
                 </div>
-                <div class="main-menu-two__right">
-                <div class="main-menu-three__btn-box">
-                                    <a href="#" class="thm-btn">Book Appointment  <span><i
+                <div class="main-menu-three__right">
+                  <!-- <div class="main-menu-three__btn-box">
+                                    <a href="contact.html" class="thm-btn">Get Started<span><i
                                                 class="icon-diagonal-arrow"></i></span></a>
-                                </div>
-                  <div class="main-menu-two__nav-sidebar-icon about-doctor-mobile">
+                                </div> -->
+                  <div class="main-menu-three__nav-sidebar-icon">
                     <a class="navSidebar-button" href="#">
                       <span class="icon-app"></span>
                     </a>
@@ -216,10 +274,9 @@
                 </div>
               </div>
             </div>
-          </nav>
-        </div>
-      </div>
-    </header>
+          </div>
+        </nav>
+      </header>
 
     <div class="stricky-header stricked-menu main-menu">
       <div class="sticky-header__content"></div>
@@ -228,99 +285,125 @@
     <!-- /.stricky-header -->
 
     <!-- Banner One Start -->
-    <section class="banner-one">
-      <div class="banner-one__shape-bg-1" style="
-            background-image: url(assets/images/shapes/banner-one-shape-bg-1.png);
-          "></div>
-
-      <div class="banner-one__shape-1"></div>
-      <div class="banner-one__shape-2"></div>
-      <div class="banner-one__shape-3"></div>
-      <div class="banner-one__shape-4 float-bob-x">
-        <img src="assets/images/shapes/banner-one-shape-4.png" alt="" />
-      </div>
-      <div class="banner-one__shape-5 float-bob-y">
-        <img src="assets/images/shapes/banner-one-shape-5.png" alt="" />
-      </div>
-
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-6">
-            <div class="banner-one__left">
-              <div class="banner-one__title-box">
-                <h2 class="banner-one__title">
-                  Making Your Space Shine Easy and <br />
-                  <span class="typed-effect banner-one__title-color" id="type-1"
-                    data-strings="Reliable Cleaning Services!, Making Every Space Shine"></span>
-                </h2>
-              </div>
-              <p class="banner-one__text">
-                Experience hassle-free, top-quality cleaning services designed
-                to keep <br />
-                your home or office spotless and stress-free.
-              </p>
-              <div class="banner-one__btn-box">
-                <a href="contact.html" class="thm-btn">Get Started<span><i class="icon-diagonal-arrow"></i></span></a>
-              </div>
-              <div class="banner-one__satisfied-partner">
-                <ul class="list-unstyled banner-one__satisfied-partner-list">
-                  <li>
-                    <div class="banner-one__satisfied-partner-img">
-                      <img src="assets/images/resources/banner-one-satisfied-partner-1-1.jpg" alt="" />
-                    </div>
-                  </li>
-                  <li>
-                    <div class="banner-one__satisfied-partner-img">
-                      <img src="assets/images/resources/banner-one-satisfied-partner-1-2.jpg" alt="" />
-                    </div>
-                  </li>
-                  <li>
-                    <div class="banner-one__satisfied-partner-img">
-                      <img src="assets/images/resources/banner-one-satisfied-partner-1-3.jpg" alt="" />
-                    </div>
-                  </li>
-                </ul>
-                <div class="banner-one__satisfied-partner-content">
-                  <div class="banner-one__satisfied-partner-count-box">
-                    <p class="odometer" data-count="200">00</p>
-                    <span>K+</span>
-                  </div>
-                  <p class="banner-one__satisfied-partner-text">
-                    Satisficed Partners
-                  </p>
-                </div>
-              </div>
+    <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      style="max-width: 1800px; margin: 0 auto"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div>
+            <div class="desk-banner">
+              <img
+                src="assets/banners/doctor.webp"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="mobile-banner">
+              <img
+                src="assets/banners/doctor.webp"
+                class="d-block w-100"
+                alt="..."
+              />
             </div>
           </div>
-          <div class="col-xl-6">
-            <div class="banner-one__right">
-              <div class="banner-one__img-box">
-                <div class="banner-one__img wow slideInRight" data-wow-delay="100ms" data-wow-duration="2500ms">
-                  <img src="assets/images/resources/banner-one-img-1.png" alt="" />
-                </div>
-                <div class="banner-one__google-rating">
-                  <div class="banner-one__google-rating-img">
-                    <img src="assets/images/resources/banner-one-google-rating-img.png" alt="" />
-                  </div>
-                  <div class="banner-one__google-rating-box">
-                    <div class="banner-one__google-rating-star">
-                      <span class="icon-star"></span>
-                      <span class="icon-star"></span>
-                    </div>
-                    <div class="banner-one__google-rating-count count-box">
-                      <p class="count-text" data-stop="12" data-speed="3000">
-                        00
-                      </p>
-                      <span>k Ratings</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        </div>
+        <div class="carousel-item">
+          <div>
+            <div class="desk-banner">
+              <img
+                src="assets/banners/joint replacements.webp"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="mobile-banner">
+              <img
+                src="assets/banners/joint replacements.webp"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div>
+            <div class="desk-banner">
+              <img
+                src="assets/banners/Avascular Necrosis.webp"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="mobile-banner">
+              <img
+                src="assets/banners/Avascular Necrosis.webp"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div>
+            <div class="desk-banner">
+              <img
+                src="assets/banners/Self Therapy.webp"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="mobile-banner">
+              <img
+                src="assets/banners/Self Therapy.webp"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div>
+            <div class="desk-banner">
+              <img
+                src="assets/banners/sports injury treatment.webp"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="mobile-banner">
+              <img
+                src="assets/banners/sports injury treatment.webp"
+                class="d-block w-100"
+                alt="..."
+              />
             </div>
           </div>
         </div>
       </div>
-    </section>
+      <button
+        class="carousel-control-prev"
+        style="background-color: transparent; border: 0px"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        style="background-color: transparent; border: 0px"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
     <!--Banner One End -->
 
     <!-- Sliding Text One Start -->
@@ -370,9 +453,9 @@
 
     <!-- About One Start -->
     <section class="about-one">
-      <div class="about-one__bg-color"></div>
-      <div class="about-one__shape-1"></div>
-      <div class="about-one__shape-2"></div>
+      <!-- <div class="about-one__bg-color"></div> -->
+      <!-- <div class="about-one__shape-1"></div> -->
+      <!-- <div class="about-one__shape-2"></div> -->
       <div class="container">
         <div class="section-title text-center sec-title-animation animation-style2 about-doctor-mobile">
           <div class="section-title__tagline-box">
@@ -384,7 +467,7 @@
           </div>
           <h2 class="section-title__title title-animation">
             Dr. Gautam Kodikal <br />
-            <span style="font-size: 15px">Senior Orthopaedic & Joint Replacement Surgeon</span>
+            <span style="font-size: 15px">Senior Consultant Orthopaedic & Joint Replacement Surgeon</span>
           </h2>
         </div>
         <div class="row">
@@ -405,7 +488,7 @@
                 </div>
                 <h2 class="section-title__title title-animation">
                   Dr. Gautam Kodikal<br />
-                  <span style="font-size: 25px">Senior Orthopaedic & Joint Replacement Surgeon</span>
+                  <span style="font-size: 22px">Senior Consultant Orthopaedic & Joint Replacement Surgeon</span>
                 </h2>
               </div>
               <p class="about-one__text" style="text-align: justify;margin-top: 15px;">
@@ -488,6 +571,7 @@
 
               <div class="main-menu__btn">
                 <a href="#"> Read More<span class="icon-next"></span></a>
+                <a href="#" style="background-color: #65aa0d;" class="appointment-btn"> Book An Appointment<span class="icon-next"></span></a>
               </div>
             </div>
           </div>
@@ -575,7 +659,7 @@
     <!-- About One End -->
 
     <!-- Services One Start -->
-    <section class="services-three">
+    <section class="services-three" style="background-color: #cedbec;">
       <div class="container">
         <div class="section-title text-center sec-title-animation animation-style1">
           <div class="section-title__tagline-box">
@@ -596,92 +680,92 @@
               <ul class="tab-buttons list-unstyled">
                 <li data-tab="#knee-replacement" class="tab-btn">
                   <a href="" class="services-three__tab-buttons-single">
-                    <i class="icon-cleaning-1"></i>
+                    <i><img src="assets/flat-icons/knee.png" style="height: 60px;" alt=""></i>
                     <span style="">Knee Replacement</span>
                   </a>
                 </li>
                 <li data-tab="#knee-arthroscopy" class="tab-btn">
                   <div class="services-three__tab-buttons-single">
-                    <i class="icon-carpet"></i>
+                    <i><img src="assets/flat-icons/knee-arthroscopy.png" style="height: 60px;" alt=""></i>
                     <span style="">Knee Arthroscopy</span>
                   </div>
                 </li>
                 <li data-tab="#hip-replacement" class="tab-btn">
                   <div class="services-three__tab-buttons-single">
-                    <i class="icon-wipe"></i>
+                    <i><img src="assets/flat-icons/hip-replacement.png" style="height: 60px;" alt=""></i>
                     <span style="">Hip Replacement</span>
                   </div>
                 </li>
                 <li data-tab="#hip-arthroscopy" class="tab-btn">
                   <div class="services-three__tab-buttons-single">
-                    <i class="icon-house-cleaning"></i>
+                    <i><img src="assets/flat-icons/hip-arthroscopy.png" style="height: 60px;" alt=""></i>
                     <span style="">Hip Arthroscopy</span>
                   </div>
                 </li>
                 <li data-tab="#shoulder-replacement" class="tab-btn">
                   <div class="services-three__tab-buttons-single">
-                    <i class="icon-sanitary"></i>
+                    <i><img src="assets/flat-icons/shoulder-replacement.png" style="height: 60px;" alt=""></i>
                     <span>Shoulder Replacement</span>
                   </div>
                 </li>
                 <li data-tab="#shoulder-arthroscopy" class="tab-btn">
                   <div class="services-three__tab-buttons-single">
-                    <i class="icon-cleaning-1"></i>
+                    <i><img src="assets/flat-icons/shoulder-arthroscopy.png" style="height: 60px;" alt=""></i>
                     <span>Shoulder Arthroscopy</span>
                   </div>
                 </li>
                 <li data-tab="#arthritis" class="tab-btn">
                   <div class="services-three__tab-buttons-single">
-                    <i class="icon-wipe"></i>
+                    <i><img src="assets/flat-icons/arthritis.png" style="height: 60px;" alt=""></i>
                     <span style="">Arthritis</span>
                   </div>
                 </li>
                 <li data-tab="#avascular-necrosis" class="tab-btn">
                   <div class="services-three__tab-buttons-single">
-                    <i class="icon-carpet"></i>
+                    <i><img src="assets/flat-icons/avn.png" style="height: 60px;" alt=""></i>
                     <span style="">Avascular Necrosis</span>
                   </div>
                 </li>
                 <li data-tab="#self-therapy" class="tab-btn">
                   <div class="services-three__tab-buttons-single">
-                    <i class="icon-wipe"></i>
+                    <i><img src="assets/flat-icons/self-therapy.png" style="height: 60px;" alt=""></i>
                     <span style="">Self Therapy</span>
                   </div>
                 </li>
                 <li data-tab="#foot-ankle-surgery" class="tab-btn">
                   <div class="services-three__tab-buttons-single">
-                    <i class="icon-house-cleaning"></i>
+                    <i><img src="assets/flat-icons/foot-ankle-surgery.png" style="height: 60px;" alt=""></i>
                     <span class="foot-ankle-surgery">Foot & Ankle Surgery</span>
                   </div>
                 </li>
                 <li data-tab="#elbow-surgery" class="tab-btn">
                   <div class="services-three__tab-buttons-single">
-                    <i class="icon-sanitary"></i>
+                    <i><img src="assets/flat-icons/elbow-surgery.png" style="height: 60px;" alt=""></i>
                     <span style="">Elbow Surgery</span>
                   </div>
                 </li>
                 <li data-tab="#spine-surgery" class="tab-btn">
                   <div class="services-three__tab-buttons-single">
-                    <i class="icon-cleaning-1"></i>
+                    <i><img src="assets/flat-icons/spine-surgery.png" style="height: 60px;" alt=""></i>
                     <span style="">Spine Surgery</span>
                   </div>
                 </li>
                 <li data-tab="#sports-injury" class="tab-btn">
                   <div class="services-three__tab-buttons-single">
-                    <i class="icon-carpet"></i>
+                    <i><img src="assets/flat-icons/sports-injury.png" style="height: 60px;" alt=""></i>
                     <span class="foot-ankle-surgery">Sports Injury Treatments</span>
                   </div>
                 </li>
 
                 <li data-tab="#orthopedic-trauma" class="tab-btn orthopedic-trauma-management">
                   <div class="services-three__tab-buttons-single">
-                    <i class="icon-house-cleaning"></i>
+                    <i><img src="assets/flat-icons/orthopedic-trauma-management.png" style="height: 60px;" alt=""></i>
                     <span class="orthopedic-trauma-management">Orthopedic Trauma Management</span>
                   </div>
                 </li>
                 <li data-tab="#back-pain" class="tab-btn">
                   <div class="services-three__tab-buttons-single">
-                    <i class="icon-sanitary"></i>
+                    <i><img src="assets/flat-icons/back-pain.png" style="height: 60px;" alt=""></i>
                     <span class="foot-ankle-surgery">Back Pain Treatment</span>
                   </div>
                 </li>
@@ -746,7 +830,7 @@
                     Active Participation in Your <br> <span>Orthopaedic Healing</span>
                   </h2>
                 </div>
-                <p class="about-three__text" style="text-align: justify;">
+                <p class="about-three__text" style="text-align: justify;margin-top: 10px;">
                   Self therapy empowers patients to actively engage in their healing journey through guided exercises,
                   posture correction, and lifestyle changes.
                   It's a cost-effective, non-invasive way to improve mobility, reduce pain, and regain strength under
@@ -925,7 +1009,7 @@
 
                 <!-- Highlighting the doctor -->
                 <div class="highlighted-doctor"
-                  style="margin: 20px 0; background: #f1f7ff; padding: 20px; border-left: 5px solid #004aad;">
+                  style="margin: 20px 0; background: #cedbec; padding: 20px; border-left: 5px solid #004aad;">
                   <h4 style="margin-bottom: 10px; color: #004aad;">Consult with AVN Expert</h4>
                   <p style="margin: 0;"><strong>Dr. Gautam Kodikal</strong> — A senior orthopaedic surgeon with deep
                     expertise in managing Avascular Necrosis through both conservative and surgical interventions.</p>
@@ -947,8 +1031,7 @@
     <!--Before And After End-->
 
     <!--Why Choose One Start-->
-    <section class="why-choose-one" style="background-color: #F2F2FF
-;">
+    <section class="why-choose-one" style="background-color: #cedbec;">
       <!-- <div
           class="why-choose-one__bg-shape"
           style="
