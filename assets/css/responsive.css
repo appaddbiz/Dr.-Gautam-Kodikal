@@ -2006,6 +2006,7 @@
     flex-direction: column;
     gap: 10px;
     align-items: baseline;
+    width: 100%;
   }
 
   .project-details__left {
