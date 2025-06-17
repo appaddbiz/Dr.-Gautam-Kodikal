@@ -1255,7 +1255,7 @@ ul {
   position: absolute;
   top: 100%;
   left: 0;
-  min-width: 350px;
+  min-width: 300px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -1330,7 +1330,7 @@ ul {
 .stricky-header .main-menu__list > li > ul > li > ul > li > a {
   position: relative;
   font-size: 16px;
-  line-height: 12px;
+  line-height: 20px;
   color: var(--Freshflow-gray);
   font-weight: 400;
   display: -webkit-box;
