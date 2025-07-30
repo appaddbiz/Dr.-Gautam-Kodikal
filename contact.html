@@ -587,12 +587,7 @@
               </div>
               <h2 class="section-title__title title-animation">Send Message</h2>
             </div>
-            <form
-              class="contact-form-validated contact-four__form"
-              action="assets/inc/sendemail.php"
-              method="post"
-              novalidate="novalidate"
-            >
+            <form id="whatsapp-form" class="contact-four__form">
               <div class="row">
                 <div class="col-xl-6 col-lg-6">
                   <h4 class="contact-four__input-title">Full Name *</h4>
@@ -601,7 +596,7 @@
                       type="text"
                       name="name"
                       placeholder="Enter Your Name"
-                      required=""
+                      required
                     />
                   </div>
                 </div>
@@ -612,18 +607,18 @@
                       type="email"
                       name="email"
                       placeholder="Enter Your Email"
-                      required=""
+                      required
                     />
                   </div>
                 </div>
                 <div class="col-xl-12">
-                  <h4 class="contact-four__input-title">Mobile No</h4>
+                  <h4 class="contact-four__input-title">Mobile No *</h4>
                   <div class="contact-four__input-box">
                     <input
                       type="text"
-                      name="Phone"
+                      name="phone"
                       placeholder="Enter Your Mobile Number"
-                      required=""
+                      required
                     />
                   </div>
                 </div>
@@ -633,6 +628,7 @@
                     <textarea
                       name="message"
                       placeholder="Write a Message to Inquire"
+                      required
                     ></textarea>
                   </div>
                   <div class="contact-four__btn-box">
@@ -645,7 +641,6 @@
                 </div>
               </div>
             </form>
-            <div class="result"></div>
           </div>
         </div>
       </section>
@@ -973,6 +968,34 @@
       ></span>
       <span class="scroll-to-top__text"> Go Back Top</span>
     </a>
+
+    <script>
+      document
+        .getElementById("whatsapp-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault(); // Prevent form from submitting normally
+
+          // Get form values
+          const name = document.querySelector("input[name='name']").value;
+          const email = document.querySelector("input[name='email']").value;
+          const phone = document.querySelector("input[name='phone']").value;
+          const message = document.querySelector(
+            "textarea[name='message']"
+          ).value;
+
+          // WhatsApp number (replace with your number, use country code, no + or spaces)
+          const whatsappNumber = "919606769141"; // Example: +91 9876543210 => 919876543210
+
+          // Construct the WhatsApp message
+          const text = `Hello, I would like to inquire:\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`;
+
+          // Redirect to WhatsApp
+          const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+            text
+          )}`;
+          window.open(whatsappURL, "_blank");
+        });
+    </script>
 
     <script>
       window.jQuery ||
